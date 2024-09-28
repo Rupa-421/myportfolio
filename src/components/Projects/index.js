@@ -8,7 +8,6 @@ import {
   CardName,
   CardDescription,
   CardFooter,
-  ViewButton,
 } from "./ProjectsElements";
 import { ProjectsData as data } from "./data";
 const Projects = forwardRef(({}, ref) => {
@@ -23,11 +22,9 @@ const Projects = forwardRef(({}, ref) => {
               <CardName>{project.name}</CardName>
               <CardDescription>{project.description}</CardDescription>
               <CardFooter>
-                <ViewButton>
-                  <a href={project.link} target="_blank">
-                    View
-                  </a>
-                </ViewButton>
+                <a href={project.link} target="_blank">
+                  <button>View</button>
+                </a>
               </CardFooter>
             </Card>
           );

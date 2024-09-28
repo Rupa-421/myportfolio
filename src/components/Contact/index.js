@@ -33,11 +33,15 @@ const Contact = forwardRef((props, ref) => {
         <ContactForm>
           <form ref={form} onSubmit={sendEmail}>
             <label>Name</label>
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" placeholder="Enter your name" />
             <label>Email</label>
-            <input type="email" name="user_email" />
+            <input
+              type="email"
+              name="user_email"
+              placeholder="Enter your email ex:rupa@gmail.com"
+            />
             <label>Message</label>
-            <textarea name="message" />
+            <textarea name="message" placeholder="Type here..." />
             <input type="submit" value="Send" />
           </form>
         </ContactForm>
@@ -50,7 +54,7 @@ const ContactHeader = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   font-family: "Raleway", sans-serif;
-  color: #7d0669;
+  color: #173b6c;
   margin: 3rem;
 `;
 const ContactWrapper = styled.div`
@@ -61,20 +65,22 @@ const ContactWrapper = styled.div`
 `;
 const ContactContainer = styled.div`
   padding: 3rem;
-  background-color: #f2c9ef;
+  background-color: #dde7f2;
 `;
 const ContactForm = styled.div`
-  border: 1px solid black;
+
+  box-shadow: rgb(79 151 198 / 67%) 0px 7px 14px 0px, rgb(0 0 0 / 12%) 0px 3px 6px 0px;
   padding: 30px;
   width: 400px;
   border-radius: 5px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Ubuntu,sans-serif;
   form {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     font-size: 16px;
-
+  
     input {
       width: 100%;
       height: 35px;
@@ -83,6 +89,7 @@ const ContactForm = styled.div`
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
       margin-bottom: 10px;
+      margin-top: 10px;;+
       &:focus {
         border: 2px solid rgba(0206, 158, 1);
       }
@@ -98,49 +105,65 @@ const ContactForm = styled.div`
       border-radius: 5px;
       border: 1px solid rgb(220, 220, 220);
       margin-bottom: 10px;
+      margin-top: 10px;
 
       &:focus {
         border: 2px solid rgb(0, 206, 158, 1);
       }
     }
     input[type="submit"] {
-  border-top: 1px solid #e597f7;
-  background: #ce65d6;
+    border-top: 1px solid #3a5f7d;
+  background: #497ba9;
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    from(#a621a4),
-    to(#ce65d6)
+    from(#6a89cc),
+    to(#497ba9)
   );
-  background: -webkit-linear-gradient(top, #a621a4, #ce65d6);
-  background: -moz-linear-gradient(top, #a621a4, #ce65d6);
-  background: -ms-linear-gradient(top, #a621a4, #ce65d6);
-  background: -o-linear-gradient(top, #a621a4, #ce65d6);
-  padding: 8.5px 17px;
-  -webkit-border-radius: 17px;
-  -moz-border-radius: 17px;
-  border-radius: 17px;
-  -webkit-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  -moz-box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  box-shadow: rgba(0, 0, 0, 1) 0 1px 0;
-  text-shadow: rgba(0, 0, 0, 0.4) 0 1px 0;
+    box-shadow: 5px 13px 8px -10px rgb(79 151 198 / 67%);
+border: transparent;
+  background: -webkit-linear-gradient(top, #2057ce, #339DFF);
+  background: -moz-linear-gradient(top, #6a89cc, #497ba9);
+  background: -ms-linear-gradient(top, #6a89cc, #497ba9);
+  background: -o-linear-gradient(top, #6a89cc, #497ba9);
+  padding: 10px 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 3px 6px;
+  text-shadow: rgba(0, 0, 0, 0.1) 0 1px 0;
   color: white;
-  font-size: 14px;
+  font-size: 15px;
   cursor: pointer;
-  font-family: Georgia, Serif;
+  font-family: 'Arial', sans-serif;
   text-decoration: none;
   vertical-align: middle;
-  &:hover {
-    border-top-color: #692878;
-    background: #692878;
-    color: #ccc;
-  }
-  &:active {
-    border-top-color: #581b5c;
-    background: #581b5c;
-  }
+  transition: all 0.3s ease;
+}
 
+input[type="submit"]:hover {
+  background: white;
+  // background: -webkit-gradient(
+  //   linear,
+  //   left top,
+  //   left bottom,
+  //   from(#4f6d92),
+  //   to(#36597d)
+  // );
+  // background: -webkit-linear-gradient(top, #2057ce, #339DFF);
+  // background: -moz-linear-gradient(top, #4f6d92, #36597d);
+  // background: -ms-linear-gradient(top, #4f6d92, #36597d);
+  // background: -o-linear-gradient(top, #4f6d92, #36597d);
+  color: #339DFF;
+}
+
+input[type="submit"]:active {
+  background: #339DFF;
+}
+
+
+}
       
     }
   }

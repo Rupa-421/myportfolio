@@ -36,8 +36,8 @@ export const NavMenuItems = styled.ul`
 
 export const NavBarToggle = styled.button`
   background-color: black;
-  width: 100%;
-  height: 80px;
+  width: 95%;
+  height: 60px;
   display: flex;
   justify-content: start;
   align-items: center;
@@ -46,10 +46,8 @@ export const NavBarToggle = styled.button`
   font-size: 18px;
   border: none;
   color: white;
-
-  &:hover {
-    background-color: #e34fbe;
-  }
+  background-color: black;
+  border-radius:0;
 `;
 
 export const NavText = styled.button`
@@ -64,7 +62,6 @@ export const NavText = styled.button`
   background-color: transparent;
   cursor: pointer;
   border: none;
-  &:hover {
-    background-color: #e34fbe;
-  }
+  background-color: black;
+  border-radius:0;
 `;

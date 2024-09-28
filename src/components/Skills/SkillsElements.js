@@ -8,7 +8,7 @@ export const SkillsHeader = styled.h1`
  font-size: clamp(2rem, 2.5vw, 3rem);
  text-align: center;
  font-family: "Raleway", sans-serif;
- color:#7d0669;
+ color:#173b6c;
  margin: 0 0 20px 0;
 `
 export const SkillsContent= styled.div`
@@ -33,12 +33,12 @@ export const SkillsWrapper = styled.div`
 export const ProgressbarWrap =styled.div`
 width:100%;
 border:1px solid black;
-background-color:#f2c9ef;
+background-color:#dce8f8;
 margin:0 0 6px 0;
 `
 
 export const Progress =styled.div`
-background-color:#e34fbe;
+background-color:#149ddd;
 height:10px;
  width: ${props => props.width}%;
 

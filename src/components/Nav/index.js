@@ -14,15 +14,13 @@ import {
 } from "./NavElements";
 import { NavbarData } from "./NavbarData";
 const Nav = ({ scrollToSection }) => {
-  const [sidebar, setSidebar] = useState(true);
+  const [sidebar, setSidebar] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
   return (
     <>
-    <style>
-   
-    </style>
-      <IconContext.Provider value={{ color: "#7d0669" }}>
+      <style></style>
+      <IconContext.Provider value={{ color: "#149ddd" }}>
         <Navbar>
           <MenuBars>
             <FaIcons.FaBars onClick={showSidebar} />
@@ -38,7 +36,7 @@ const Nav = ({ scrollToSection }) => {
               return (
                 <NavText key={index} onClick={() => scrollToSection(item.path)}>
                   {item.icon}
-                  <span >{item.title}</span>
+                  <span>{item.title}</span>
                 </NavText>
               );
             })}

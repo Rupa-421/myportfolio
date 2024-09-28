@@ -25,7 +25,12 @@ export default function CustomizedTimeline() {
           <TimelineDot></TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2, fontSize: "4rem" }}>
+        <TimelineContent
+          sx={{ py: "12px", px: 2, fontSize: "2rem" }}
+          sm={{ py: "12px", px: 2, fontSize: "3rem" }}
+          md={{ py: "12px", px: 2, fontSize: "4rem" }}
+          lg={{ py: "12px", px: 2, fontSize: "5rem" }}
+        >
           <Typography variant="h6" component="span" fontWeight={600}>
             BACHELOR OF TECHNOLOGY
           </Typography>
@@ -46,7 +51,12 @@ export default function CustomizedTimeline() {
           <TimelineDot color="primary"></TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "12px", px: 2, fontSize: "4rem" }}>
+        <TimelineContent
+          sx={{ py: "12px", px: 2, fontSize: "2rem" }}
+          sm={{ py: "12px", px: 2, fontSize: "3rem" }}
+          md={{ py: "12px", px: 2, fontSize: "4rem" }}
+          lg={{ py: "12px", px: 2, fontSize: "5rem" }}
+        >
           <Typography variant="h6" component="span" fontWeight={600}>
             INTERMEDIATE
           </Typography>
@@ -68,7 +78,12 @@ export default function CustomizedTimeline() {
           <TimelineDot></TimelineDot>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent sx={{ py: "2rem", px: 2, fontSize: "4rem" }}>
+        <TimelineContent
+          sx={{ py: "12px", px: 2, fontSize: "2rem" }}
+          sm={{ py: "12px", px: 2, fontSize: "3rem" }}
+          md={{ py: "12px", px: 2, fontSize: "4rem" }}
+          lg={{ py: "12px", px: 2, fontSize: "5rem" }}
+        >
           <Typography variant="h6" component="span" fontWeight={600}>
             SCHOOLING
           </Typography>

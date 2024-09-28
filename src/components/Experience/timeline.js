@@ -26,11 +26,11 @@ export default function CustomizedTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2, fontSize: "4rem" }}>
-          <Typography variant="h6" component="span" color="#e34fbe">
+          <Typography variant="h6" component="span" color="black">
             Software QA Test Engineer
           </Typography>
-          <Typography color="#e34fbe">NVIDIA</Typography>
-          <Typography color="#e34fbe">Tech: Linux, Python</Typography>
+          <Typography color="black">NVIDIA</Typography>
+          <Typography color="black">Tech: Linux, Python</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -47,11 +47,11 @@ export default function CustomizedTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2, fontSize: "4rem" }}>
-          <Typography variant="h6" component="span" color="#e34fbe">
+          <Typography variant="h6" component="span" color="black">
             Technology Analyst Intern
           </Typography>
-          <Typography color="#e34fbe" >Morgan Stanley</Typography>
-          <Typography color="#e34fbe">Tech: Angular, Typescript, Jest, SCSS, HTML, ASP.NET</Typography>
+          <Typography color="black" >Morgan Stanley</Typography>
+          <Typography color="black">Tech: Angular, Typescript, Jest, SCSS, HTML, ASP.NET</Typography>
         </TimelineContent>
       </TimelineItem>
       <TimelineItem>
@@ -69,11 +69,11 @@ export default function CustomizedTimeline() {
           <TimelineConnector />
         </TimelineSeparator>
         <TimelineContent sx={{ py: "12px", px: 2, fontSize: "4rem" }}>
-          <Typography variant="h6" component="span" color="#e34fbe">
+          <Typography variant="h6" component="span" color="black">
             Project Trainee
           </Typography>
-          <Typography color="#e34fbe">ZOHO</Typography>
-          <Typography color="#e34fbe">Tech: SprintBoot, Java</Typography>
+          <Typography color="black">ZOHO</Typography>
+          <Typography color="black">Tech: SprintBoot, Java</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>

@@ -15,7 +15,6 @@ const Testimonials = forwardRef(({}, ref) => {
   return (
     <TestimonialsContainer ref={ref}>
       <TestimonialsHeader>Testimonials</TestimonialsHeader>
-      {/* <marquee scrollamount="10"> */}
       <TestimonialsWrapper>
         <ScrollContent>
           {data.map((testimonial, index) => {

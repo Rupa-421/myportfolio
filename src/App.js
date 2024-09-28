@@ -52,7 +52,7 @@ function App() {
               height: "100vh",
             }}
           >
-            <RingLoader color="#7d0669" cssOverride={override}></RingLoader>
+            <RingLoader color="#339DFF" cssOverride={override}></RingLoader>
           </div>
         }
       >

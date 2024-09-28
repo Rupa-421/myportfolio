@@ -10,23 +10,23 @@ import {
 import Resume from "./Resume";
 import AboutScroller from "./AboutScroller";
 import { forwardRef } from "react";
-const About = forwardRef(({ scrollToSection},ref) => {
+const About = forwardRef(({ scrollToSection }, ref) => {
   return (
     <AboutContainer ref={ref}>
       <AboutWrapper>
         <AboutHeader>Rupa sri.A</AboutHeader>
         <AboutContent>
           I'm
-          <span style={{ color: "white", fontWeight: "bold" }}>
+          <span style={{ color: "#339DFF", fontWeight: "bold" }}>
             <Typewriter
-              words={[" Student", " Engineer", " Learner"]}
+              words={[" Programmer", " Engineer", " Problem solver"]}
               typeSpeed={70}
               deleteSpeed={50}
               delaySpeed={1000}
               loop={0}
               cursor
               cursorStyle="|"
-              cursorColor="white"
+              cursorColor="#339DFF"
             />
           </span>
         </AboutContent>

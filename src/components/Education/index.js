@@ -12,8 +12,7 @@ const Education = forwardRef(({}, ref) => {
 });
 
 export const EducationContainer = styled.div`
-  background-color: #f2c9ef;
-  height: 100vh;
+  background-color: #dde7f2;
   padding: 50px 0 20px 0;
 `;
 
@@ -21,7 +20,7 @@ export const EducationHeader = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   font-family: "Raleway", sans-serif;
-  color: #7d0669;
+  color: #173b6c;
   margin: 0 0 50px 0;
 `;
 

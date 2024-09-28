@@ -17,11 +17,11 @@ export const skillsData = [
   },
   {
     name: "Angular",
-    progress: "85",
+    progress: "90",
   },
   {
     name: "SQL",
-    progress: "60",
+    progress: "70",
   },
   {
     name: "Java",
@@ -33,15 +33,15 @@ export const skillsData = [
   },
   {
     name: "React",
-    progress: "40",
+    progress: "80",
   },
   {
     name: "Javascript",
-    progress: "60",
+    progress: "70",
   },
   {
     name: "CSS",
-    progress: "60",
+    progress: "70",
   },
   {
     name: "Linux",

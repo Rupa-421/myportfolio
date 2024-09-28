@@ -9,7 +9,7 @@ export const TestimonialsHeader = styled.h2`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
   font-family: "Raleway", sans-serif;
-  color: #7d0669;
+  color: #173b6c;
   margin: 0 0 50px 0;
 `;
 
@@ -18,27 +18,32 @@ export const TestimonialsWrapper = styled.div`
   white-space: nowrap;
   overflow: hidden;
   position: relative;
+  width: 80vw;
+  margin-left:10vw;
 `;
 
 export const ScrollContent = styled.div`
   display: flex;
-  animation: scroll 40s linear infinite;
+  animation: scroll 30s linear infinite;
   text-wrap: wrap;
 
   @keyframes scroll {
     0% {
-      transform: translateX(100%);
+      transform: translateX(80vw);
     }
-    100% {
-      transform: translateX(-100%);
+    80vw {
+      transform: translateX(-180vw);
     }
   }
+    &:hover{
+    animation-play-state: paused
+    }
 `;
 export const Card = styled.div`
   min-width: 450px;
   margin: 0 10px;
   padding: 20px;
-  background-color: #f2c9ef;
+  background-color: #dde7f2;
   border-radius: 10px;
   text-align: center;
 `;
